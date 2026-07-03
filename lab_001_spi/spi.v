@@ -221,7 +221,7 @@ module spi
     always @(posedge clk or posedge reset)
     begin
         if (reset)
-            shift_out <= 16'h0000;
+            shift_out <= 8'h00;
         else
             shift_out <= shift_out_next;
     end
