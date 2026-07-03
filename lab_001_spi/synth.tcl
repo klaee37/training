@@ -39,7 +39,7 @@ syn_opt
 write_netlist > ${DESIGN}_netlist.v
 
 echo "=================================="
-echo "       Synthesize Done"
+echo "       Synthesis Done"
 echo "=================================="
 
 exit
