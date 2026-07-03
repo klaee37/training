@@ -23,7 +23,6 @@ clean:
 	@find . -type d -iname "waves.shm" -exec rm -rv {} +
 	@find . -type d -iname ".bpad" -exec rm -rv {} +
 	@find . -type d -iname "Totem" -exec rm -rv {} +
-	@find . -iname "*.vcd" -exec rm -v {} +
 	@find . -iname "*.trn" -exec rm -v {} +
 	@find . -iname "*.dsn" -exec rm -v {} +
 	@find . -iname "*.diag" -exec rm -v {} +
