@@ -7,6 +7,12 @@ elab:
 debug:
 	xrun -clean -file tb.f -input waves.tcl -access +rwc -gui -linedebug
 
+syn:
+	@find . -type d -iname "fv" -exec rm -rv {} +
+	@find . -iname "genus.cmd*" -exec rm -v {} +
+	@find . -iname "genus.log*" -exec rm -v {} +
+	genus -abort_on_error -execute "source -quiet synth.tcl"
+
 clean:
 	@find . -type d -iname ".simvision" -exec rm -rv {} +
 	@find . -type d -iname ".cadence" -exec rm -rv {} +
