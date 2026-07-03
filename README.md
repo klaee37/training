@@ -19,7 +19,7 @@ code &
   - On the menu -> File -> Open Folder...
   - On the Open Folder window, browse into "training" folder and click "Select"
 ## Lab_001_SPI
-- Enter directory lab1_spi (assume you are in directory training/)
+- Enter directory lab_001_spi (assume you are in directory training/)
 ```
 cd lab_001_spi
 ```
@@ -41,5 +41,5 @@ simvision &
   - Click to select file "sim.vcd".
   - Click "Open & Dismiss"- On the File Translation window, click "OK".
   - Click signals on the Design Browser window, the signals will show on the waveform window.
-- Modify the spi.v with VScode or any text editor in lab1_spi/ to get test bench result pass.
+- Modify the spi.v with VScode or any text editor in lab_001_spi/ to get test bench result pass.
 - You can see the passing waveform from file "sim_pass.vcd".
