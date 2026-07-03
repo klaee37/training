@@ -19,6 +19,7 @@ code &
   - On the menu -> File -> Open Folder...
   - On the Open Folder window, browse into "training" folder and click "Select"
 ## Lab_001_SPI
+### Lab_001_SPI : Fix spi.v
 Modify the combination logics (in start-end comment blocks) in lab_001_spi/spi.v with VScode or any text editor to get test bench result pass.
 - Enter directory lab_001_spi (assume you are in directory training/)
 ```
@@ -43,3 +44,14 @@ simvision &
   - Click "Open & Dismiss"- On the File Translation window, click "OK".
   - Click signals on the Design Browser window, the signals will show on the waveform window.
 - You can see the passing waveform from file "sim_pass.vcd".
+### Lab_001_SPI : Synthesis
+Check that there is not inferred latch in your design.
+- Run synthesize.
+```
+make syn
+```
+You should get a message "Synthesis Done". If there is any inferred latch, an error message "CDFG2G-622 Inferred latch" is showns and informs the inferred latch signal.
+- Run simulation with the gate netlist file spi_netlist.v.
+```
+make sim_syn
+```
