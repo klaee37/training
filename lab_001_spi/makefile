@@ -27,3 +27,6 @@ clean:
 	@find . -iname "xrun.*" -exec rm -v {} +
 	@find . -iname "*.err" -exec rm -v {} +
 	@find . -iname "novas_dump.log" -exec rm -v {} +
+	@find . -type d -iname "fv" -exec rm -rv {} +
+	@find . -iname "genus.cmd*" -exec rm -v {} +
+	@find . -iname "genus.log*" -exec rm -v {} +
