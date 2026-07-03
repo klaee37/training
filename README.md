@@ -23,7 +23,7 @@ code &
 ```
 cd lab_001_spi
 ```
-- Run elaboration to check error and warning message.
+- Run elaboration to check error and warning message. Make sure that the error is zero. The warning message should be zero.
 ```
 make elab
 ```
