@@ -3,11 +3,21 @@
 ```
 git clone https://github.com/klaee37/training.git
 ```
-- Open vscode in directory training/.
+- Enter directory training.
 ```
 cd training
+```
+- Open VSCode.
+```
 code &
 ```
+- Install VSCode Extension (First-time only),
+  - On the VSCode window,
+  - Go to Extensions (click Extensions tab, or menu -> View -> Extensions or Ctrl+Shift+X).
+  - Search "SystemVerilog - Languauge Support" and click "Install".
+- Open project folder,
+  - On the menu -> File -> Open Folder...
+  - On the Open Folder window, browse into "training" folder and click "Select"
 ## Lab_001_SPI
 - Enter directory lab1_spi (assume you are in directory training/)
 ```
