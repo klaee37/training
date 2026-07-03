@@ -1,5 +1,5 @@
-run:
-	xrun -clean -file tb.f -input waves.tcl -access +r-wc
+sim:
+	xrun -clean -file tb.f spi.v -input waves.tcl -access +r-wc
 
 elab:
 	xrun -clean -file tb.f -input waves.tcl -access +r-wc -elaborate
@@ -12,6 +12,9 @@ syn:
 	@find . -iname "genus.cmd*" -exec rm -v {} +
 	@find . -iname "genus.log*" -exec rm -v {} +
 	genus -abort_on_error -execute "source -quiet synth.tcl"
+
+sim_syn:
+	xrun -clean -file tb.f spi_netlist.v -input waves.tcl -access +r-wc -v /home/icdesign/pdk/stclib/Front_End/verilog/tcbn65lp_200a/tcbn65lp.v
 
 clean:
 	@find . -type d -iname ".simvision" -exec rm -rv {} +
