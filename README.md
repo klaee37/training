@@ -50,7 +50,7 @@ Check that there is not inferred latch in your design.
 ```
 make syn
 ```
-You should get a message "Synthesis Done". If there is any inferred latch, an error message "CDFG2G-622 Inferred latch" is showns and informs the inferred latch signal.
+You should get a message "Synthesis Done". If there is any inferred latch, an error message "Inferred latch" is showns and informs the inferred latch signal.
 - Run simulation with the gate netlist file spi_netlist.v.
 ```
 make sim_syn
