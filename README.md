@@ -37,8 +37,9 @@ simvision &
 ```
 - On the simvision window,
   - On the menu -> File -> Open Database...
-  - On the Open Database window, Display files of type: -> "VCD Files (*.vcd)"
-  - Click to select file "sim.vcd"
-  - Click "Open & Dismiss"- On the File Translation window, click "OK"
+  - On the Open Database window, Display files of type: -> "VCD Files (*.vcd)".
+  - Click to select file "sim.vcd".
+  - Click "Open & Dismiss"- On the File Translation window, click "OK".
+  - Click signals on the Design Browser window, the signals will show on the waveform window.
 - Modify the spi.v with VScode or any text editor in lab1_spi/ to get test bench result pass.
 - You can see the passing waveform from file "sim_pass.vcd".
