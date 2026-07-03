@@ -1,0 +1,23 @@
+run:
+	xrun -clean -file tb.f -input waves.tcl -access +r-wc
+
+elab:
+	xrun -clean -file tb.f -input waves.tcl -access +r-wc -elaborate
+
+debug:
+	xrun -clean -file tb.f -input waves.tcl -access +rwc -gui -linedebug
+
+clean:
+	@find . -type d -iname ".simvision" -exec rm -rv {} +
+	@find . -type d -iname ".cadence" -exec rm -rv {} +
+	@find . -type d -iname "xcelium.d" -exec rm -rv {} +
+	@find . -type d -iname "waves.shm" -exec rm -rv {} +
+	@find . -type d -iname ".bpad" -exec rm -rv {} +
+	@find . -type d -iname "Totem" -exec rm -rv {} +
+	@find . -iname "*.vcd" -exec rm -v {} +
+	@find . -iname "*.trn" -exec rm -v {} +
+	@find . -iname "*.dsn" -exec rm -v {} +
+	@find . -iname "*.diag" -exec rm -v {} +
+	@find . -iname "xrun.*" -exec rm -v {} +
+	@find . -iname "*.err" -exec rm -v {} +
+	@find . -iname "novas_dump.log" -exec rm -v {} +
