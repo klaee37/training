@@ -19,7 +19,7 @@ code &
   - On the menu -> File -> Open Folder...
   - On the Open Folder window, browse into "training" folder and click "Select"
 ## Lab_001_SPI
-Modify the file lab_001_spi/spi.v with VScode or any text editor to get test bench result pass.
+Modify the combination logics (in start-end comment blocks) in lab_001_spi/spi.v with VScode or any text editor to get test bench result pass.
 - Enter directory lab_001_spi (assume you are in directory training/)
 ```
 cd lab_001_spi
