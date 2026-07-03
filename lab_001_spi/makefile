@@ -2,10 +2,10 @@ sim:
 	xrun -clean -file tb.f spi.v -input waves.tcl -access +r-wc
 
 elab:
-	xrun -clean -file tb.f -input waves.tcl -access +r-wc -elaborate
+	xrun -clean -file tb.f spi.v -input waves.tcl -access +r-wc -elaborate
 
 debug:
-	xrun -clean -file tb.f -input waves.tcl -access +rwc -gui -linedebug
+	xrun -clean -file tb.f spi.v -input waves.tcl -access +rwc -gui -linedebug
 
 syn:
 	@find . -type d -iname "fv" -exec rm -rv {} +
