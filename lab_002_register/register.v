@@ -67,7 +67,7 @@ module register
             EN_0 <= 1'b0;
         end else
         begin
-            CONFIG_1 <= config_0_next;
+            CONFIG_1 <= config_1_next;
             EN_0 <= EN_0_next;
         end
     end
