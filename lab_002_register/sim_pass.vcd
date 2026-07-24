@@ -1,5 +1,5 @@
 $date
-    Jul 24, 2026  18:50:15
+    Jul 24, 2026  19:10:20
 $end
 $version
     TOOL:	xmsim(64)	23.09-s013
@@ -88,7 +88,7 @@ $var wire      3 f    STATUS_2 [2:0] $end
 $var wire      1 g    STATUS_1  $end
 $var reg       8 h    config_0_next [7:0] $end
 $var reg       1 i    EN_0_next $end
-$var reg       8 j    config_1_next [7:0] $end
+$var reg       3 j    config_1_next [2:0] $end
 $var reg       1 k    EN_1_next $end
 $var reg       8 l    data_r_next [7:0] $end
 $upscope $end
