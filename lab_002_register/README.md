@@ -1,17 +1,3 @@
-# Training
-- Clone the project.
-```
-git clone https://github.com/klaee37/training.git
-```
-- Enter directory training.
-```
-cd training
-```
-- Open VSCode.
-```
-code . &
-```
-
 ## 2. Lab_002_register
 - Modify register.v to get pass simulation result.
 - SDO is zero for undefined bit reading.
