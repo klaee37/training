@@ -338,12 +338,12 @@ module tb
 
         if (actual_data === expected_data)
         begin
-            $display("   %.3fus actual = b%s, expected = b%s : PASS", $realtime/1e6, str_a.toupper(), str_e.toupper());
+            $display("   %.3fms actual = b%s, expected = b%s : PASS", $realtime/1e6, str_a.toupper(), str_e.toupper());
         end else
         begin
             is_fail = 1;
             #SCK_PERIOD_NS;
-            $display("   %.3fus actual = b%s, expected = b%s : FAIL", $realtime/1e6, str_a.toupper(), str_e.toupper());
+            $display("   %.3fms actual = b%s, expected = b%s : FAIL", $realtime/1e6, str_a.toupper(), str_e.toupper());
             $finish;
         end
     end
