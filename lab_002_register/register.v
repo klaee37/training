@@ -54,7 +54,7 @@ module register
             EN_0_next = data_w[7];
         end else
         begin
-            config_1_next = CONFIG_0;
+            config_1_next = CONFIG_1;
             EN_0_next = EN_0;
         end
     end
