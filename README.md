@@ -56,6 +56,9 @@ You should get a message "Synthesis Done". If there is any inferred latch, an er
 make sim_syn
 ```
 ## 2. Lab_002_register
+- Modify register.v to get pass simulation result.
+- SDO is zero for undefined bit reading.
+
 ### Register Table
 - Address 0x00
 
