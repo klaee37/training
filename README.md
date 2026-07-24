@@ -9,7 +9,7 @@ cd training
 ```
 - Open VSCode.
 ```
-code &
+code . &
 ```
 - Install VSCode Extension (First-time only),
   - On the VSCode window,
