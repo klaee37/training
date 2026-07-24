@@ -10,9 +10,11 @@ set_db init_lib_search_path /mnt/backup/pdk/stclib/Front_End/timing_power_noise/
 set_db init_hdl_search_path $RTL_PATH
 
 suppress_messages { LBR-101 LBR-162 LBR-9 PHYS-12 LBR-155 LBR-415 PHYS-279 CWD-19 CWD-36 }
-set_db /messages/CDFG-372 .severity warning
-set_db /messages/CDFG2G-622 .severity error
-set_db hdl_error_on_latch true
+set_db /messages/CDFG-250 .severity warning; # Processing multi-dimensional arrays.
+set_db /messages/CDFG-372 .severity error; # bit mismatch
+set_db /messages/CDFG-373 .severity warning; # Sign mismatch in assignment.
+set_db /messages/CDFG-769 .severity warning; # Identified sum-of-products logic to be optimized during syn_generic.
+set_db /messages/CDFG2G-622 .severity error; # inferred latch
 
 read_libs $LIB_LIST
 read_hdl $RTL_LIST
