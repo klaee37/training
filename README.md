@@ -185,22 +185,25 @@ make sim_syn
     <tr>
       <td>Name</td>
       <td>EN_1</td>
+      <td></td>
       <td colspan="3">STATUS_2[2:0]</td>
-      <td colspan="3"></td>
+      <td colspan="2"></td>
       <td>STATUS_1</td>
     </tr>
     <tr>
       <td>Access Type</td>
       <td>R/W</td>
+      <td></td>
       <td colspan="3">R</td>
-      <td colspan="3"></td>
+      <td colspan="2"></td>
       <td>R</td>
     </tr>
     <tr>
       <td>Reset Value</td>
       <td>b1</td>
+      <td></td>
       <td colspan="3">bXXX</td>
-      <td colspan="3"></td>
+      <td colspan="2"></td>
       <td>bX</td>
     </tr>
   </tbody>
