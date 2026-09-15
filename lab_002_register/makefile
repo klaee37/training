@@ -1,13 +1,14 @@
 sim:
-	xrun -clean -file tb.f register.v -input waves.tcl -access +r-wc -v /mnt/backup/pdk/stclib/Front_End/verilog/tcbn65lp_200a/tcbn65lp.v
+	xrun -clean -file tb.f register.v -input waves.tcl -access +r-wc \
+		-v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp_220a/verilog/tcbn65lp.v
 
 elab:
 	xrun -clean -file tb.f register.v -input waves.tcl -access +r-wc -elaborate \
-		-v /mnt/backup/pdk/stclib/Front_End/verilog/tcbn65lp_200a/tcbn65lp.v
+		-v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp_220a/verilog/tcbn65lp.v
 
 debug:
 	xrun -clean -file tb.f register.v -input waves.tcl -access +rwc -gui -linedebug \
-		-v /mnt/backup/pdk/stclib/Front_End/verilog/tcbn65lp_200a/tcbn65lp.v
+		-v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp_220a/verilog/tcbn65lp.v
 
 syn:
 	@find . -type d -iname "fv" -exec rm -rv {} +
@@ -17,7 +18,7 @@ syn:
 
 sim_syn:
 	xrun -clean -file tb.f register_netlist.v -input waves.tcl -access +r-wc \
-		-v /mnt/backup/pdk/stclib/Front_End/verilog/tcbn65lp_200a/tcbn65lp.v
+		-v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp_220a/verilog/tcbn65lp.v
 
 clean:
 	@find . -type d -iname ".simvision" -exec rm -rv {} +
