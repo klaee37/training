@@ -14,7 +14,8 @@ syn:
 	genus -abort_on_error -execute "source -quiet synth.tcl"
 
 sim_syn:
-	xrun -clean -file tb.f spi_netlist.v -input waves.tcl -access +r-wc -v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp_220a/verilog/tcbn65lp.v
+	xrun -clean -file tb.f spi_netlist.v -input waves.tcl -access +r-wc \
+	-v /opt/cadence/PDK/TSMC65/digital/libraries/standard_cell/rvt/tcbn65lp/verilog/tcbn65lp.v
 
 clean:
 	@find . -type d -iname ".simvision" -exec rm -rv {} +
